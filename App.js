@@ -5,7 +5,7 @@ import Header from './components/Header'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header/>
+      <Header title='1st React Native App'/>
       </View>
   );
 }
@@ -13,6 +13,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 60,
+    backgroundColor: 'black'
   },
 });

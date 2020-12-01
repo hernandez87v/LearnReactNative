@@ -1,17 +1,20 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function Header() {
+export default function Header({title}) {
     return (
         <View style={styles.header}>
-            <Text style={styles.text}>1st React Native App</Text>
+            <Text style={styles.text}>{title}</Text>
         </View>
     )
 }
 
+Header.defaultProps = {
+    title: 'Welcome',
+}
+
 const styles = StyleSheet.create({
     header: {
-        height: 60,
         padding: 15,
         backgroundColor: 'blue',
     },
