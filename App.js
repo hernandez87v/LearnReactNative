@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, StyleSheet, Text, View } from 'react-native'
 import Header from './components/Header'
 import Icon from 'react-native-vector-icons/FontAwesome';
-// const myButton = (<Icon.Button name="instagram" size={30} color="#900">Check My Instagram!</Icon.Button>);
 
 export default function App() {
   return (
@@ -15,9 +14,10 @@ export default function App() {
             alert('You tapped the button!');
           }}
           title="Press Me"
+          icon={<Icon name="facebook" size={15} color="white" />}
         />
-        <Icon.Button name="rocket" backgroundColor="#3b5998">
-            Login with Facebook
+        <Icon.Button name="instagram" backgroundColor="#3b5998">
+          Login with Facebook
         </Icon.Button>
       </View>
     </View>
