@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, StyleSheet, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 import Header from './components/Header'
 import Icon from 'react-native-vector-icons/FontAwesome';
 // const myButton = (<Icon.Button name="instagram" size={30} color="#900">Check My Instagram!</Icon.Button>);
@@ -16,8 +16,8 @@ export default function App() {
           }}
           title="Press Me"
         />
-        <Icon.Button name="instagram" backgroundColor="#3b5998">
-          Check My Instagram!
+        <Icon.Button name="rocket" backgroundColor="#3b5998">
+            Login with Facebook
         </Icon.Button>
       </View>
     </View>
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     margin: 40,
   },
   buttonLayout: {
-    borderRadius: 100/2,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
